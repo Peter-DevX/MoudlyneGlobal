@@ -1,0 +1,478 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #2c3e50;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+  }
+  
+  p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #555;
+  }
+  
+  /* Section Styles */
+  .section {
+    padding: 80px 0;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 48px;
+    margin-bottom: 60px;
+    color: #2c3e50;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    transition: color 0.3s ease;
+  }
+  
+  .section-title:hover {
+    color: #4CAF50;
+  }
+  
+  
+  .section-subtitle {
+    font-size: 20px;
+    color: #666;
+    margin-bottom: 80px;
+    transition: color 0.3s ease;
+  }
+  
+  .section-subtitle:hover {
+    color: #888;
+  }
+  
+  
+  /* Services Section Styles */
+  .services-section {
+    background-color: #ffffff;
+  }
+  
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 60px;
+    margin-top: 40px;
+  }
+  
+  .service-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    text-align: left;
+    border: 1px solid #e0e0e0;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-20px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  }
+  
+  .service-icon {
+    font-size: 60px;
+    margin-bottom: 30px;
+    color: #4CAF50;
+    transition: color 0.3s ease;
+  }
+  
+  .service-card:hover .service-icon {
+    color: #2c3e50;
+  }
+  
+  
+  .service-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    transition: color 0.3s ease;
+  }
+  
+  .service-card:hover .service-title {
+    color: #4CAF50;
+  }
+  
+  
+  .service-description {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 30px;
+  }
+  
+  .service-features {
+    list-style: none;
+    margin-left: 0;
+  }
+  
+  .service-features li {
+    font-size: 18px;
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 30px;
+  }
+  
+  .service-features li::before {
+    content: '✔';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #4CAF50;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  /* Experience Section Styles */
+  .experience-section {
+    background-color: #f9f9f9;
+  }
+  
+  .experience-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    margin-top: 40px;
+  }
+  
+  .experience-text {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .experience-text h3 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #2c3e50;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+  
+  .experience-text p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 30px;
+  }
+  
+  .experience-text ul {
+    list-style: none;
+    margin-left: 0;
+  }
+  
+  .experience-text ul li {
+    font-size: 18px;
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 30px;
+  }
+  
+  .experience-text ul li::before {
+    content: '✔';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #4CAF50;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  
+  .experience-image {
+    flex: 1;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s ease;
+  }
+  
+  .experience-image:hover {
+    transform: scale(1.05);
+  }
+  
+  
+  .experience-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+  }
+  
+  
+  /* Call to Action Section Styles */
+  .cta-section {
+    background-color: #ffffff;
+    text-align: center;
+    padding: 100px 0;
+    border-top: 1px solid #e0e0e0;
+  }
+  
+  .cta-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  
+  .cta-title {
+    font-size: 42px;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+  
+  
+  .cta-text {
+    font-size: 20px;
+    color: #666;
+    margin-bottom: 40px;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    padding: 15px 35px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .cta-button:hover {
+    background-color: #2c3e50;
+    transform: translateY(-5px);
+  }
+  
+  
+  /* Responsive Styles */
+  @media (max-width: 1024px) {
+    .container {
+      max-width: 960px;
+    }
+  
+    .section-title {
+      font-size: 40px;
+    }
+  
+    .section-subtitle {
+      font-size: 18px;
+    }
+  
+    .services-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .experience-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .experience-text {
+      text-align: center;
+    }
+  
+    .cta-title {
+      font-size: 36px;
+    }
+  
+    .cta-text {
+      font-size: 18px;
+    }
+  }
+  
+  
+  @media (max-width: 768px) {
+    .container {
+      max-width: 720px;
+    }
+  
+    .section {
+      padding: 60px 0;
+    }
+  
+    .section-title {
+      font-size: 32px;
+    }
+  
+    .section-subtitle {
+      font-size: 16px;
+    }
+  
+    .service-card {
+      padding: 30px;
+    }
+  
+    .service-title {
+      font-size: 24px;
+    }
+  
+    .service-description {
+      font-size: 16px;
+    }
+  
+    .service-features li {
+      font-size: 16px;
+    }
+  
+    .experience-text h3 {
+      font-size: 30px;
+    }
+  
+    .experience-text p {
+      font-size: 16px;
+    }
+  
+    .experience-text ul li{
+       font-size: 16px;
+    }
+  
+    .cta-title {
+      font-size: 30px;
+    }
+  
+    .cta-text {
+      font-size: 16px;
+    }
+  
+    .cta-button {
+      font-size: 18px;
+      padding: 12px 30px;
+    }
+  }
+  
+  
+  @media (max-width: 480px) {
+    .container {
+      padding: 0 15px;
+    }
+  
+    .section {
+      padding: 50px 0;
+    }
+  
+    .section-title {
+      font-size: 28px;
+    }
+  
+    .section-subtitle {
+      font-size: 14px;
+    }
+  
+    .service-card {
+      padding: 20px;
+    }
+  
+    .service-title {
+      font-size: 20px;
+    }
+  
+    .service-description {
+      font-size: 14px;
+    }
+  
+     .service-features li {
+      font-size: 14px;
+    }
+  
+    .experience-text h3 {
+      font-size: 26px;
+    }
+  
+    .experience-text p {
+      font-size: 14px;
+    }
+    .experience-text ul li{
+       font-size: 14px;
+    }
+  
+    .cta-title {
+      font-size: 26px;
+    }
+  
+    .cta-text {
+      font-size: 14px;
+    }
+  
+    .cta-button {
+      font-size: 16px;
+      padding: 10px 25px;
+    }
+  }
+  
+  
+  /* Animation Keyframes */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-100px);
+    }
+  
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideInRight {
+    from {
+      transform: translateX(100px);
+    }
+  
+    to {
+      transform: translateX(0);
+    }
+  }
+ 
+  
+  /* Add animations to elements */
+.service-card:nth-child(1) {
+  animation: fadeIn 1s ease, slideInLeft 0.8s ease;
+}
+
+.service-card:nth-child(2) {
+  animation: fadeIn 1s ease, slideInRight 0.8s ease;
+}
+
+.service-card:nth-child(3) {
+  animation: fadeIn 1s ease, slideInLeft 0.8s ease;
+}
+
+.service-card:nth-child(4) {
+  animation: fadeIn 1s ease, slideInRight 0.8s ease;
+}
+
+.experience-text {
+  animation: fadeIn 1s ease;
+}
+
+.experience-image {
+  animation: fadeIn 1s ease, slideInRight 0.8s ease;
+}
+
+.cta-content {
+  animation: fadeIn 1s ease;
+}

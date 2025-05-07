@@ -78,7 +78,7 @@ h6 {
 
 /* PHP Email Form Messages
 ------------------------------*/
-.php-email-form .error-message {
+/* .php-email-form .error-message {
   display: none;
   background: #df1529;
   color: #ffffff;
@@ -104,7 +104,7 @@ h6 {
   text-align: center;
   padding: 15px;
   margin-bottom: 24px;
-}
+} */
 
 .php-email-form .loading:before {
   content: "";
@@ -1579,6 +1579,45 @@ section,
   color: color-mix(in srgb, var(--contrast-color), transparent 50%);
 }
 
+/* subscription section */
+.custom-submit-btn {
+  /* Basic styling */
+  padding: 12px 24px;
+  border: none;
+  /* border-radius: 30px; */
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  
+  /* Color scheme */
+  background: #116530;
+  color: white;
+  
+  /* Hover effects */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.custom-submit-btn:hover {
+  /* transform: translateY(-2px); */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  background: #116530f3;
+}
+
+.custom-submit-btn:active {
+  transform: translateY(0);
+}
+
+
+/* form .subscribe_hover:hover{
+
+  background-color: #116530;
+}
+.subscribe_hover:hover{
+  background-color: #0c3001;
+} */
+
+
 .call-to-action .content .loading,
 .call-to-action .content .error-message,
 .call-to-action .content .sent-message {
@@ -2152,7 +2191,7 @@ section,
 # Contact Section
 --------------------------------------------------------------*/
 .contact {
-  padding-top: 10px;
+  padding-top: 0px;
 }
 
 .contact .info {

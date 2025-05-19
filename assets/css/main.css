@@ -707,11 +707,11 @@ h6 {
 
 .page-title:before {
   content: "";
-  background-color: color-mix(
+  /* background-color: color-mix(
     in srgb,
     var(--background-color),
     transparent 50%
-  );
+  ); */
   position: absolute;
   inset: 0;
 }
@@ -1010,6 +1010,10 @@ section,
   font-size: 1.05rem;
 }
 
+.brighten-image {
+  filter: brightness(1.7);
+}
+
 .learn-more {
   color: #2a5a3c;
   text-decoration: none;
@@ -1118,6 +1122,11 @@ section,
   color: #888;
 }
 
+.resized-image {
+  width: 360px;
+  height: 360px;
+  object-fit: cover;
+}
 /*Animations*/
 .card-one {
   animation: fadeIn 1s ease, moveInLeft 0.5s ease;
@@ -1277,7 +1286,7 @@ section,
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
-.about-image{
+.about-image {
   height: 100vh;
 }
 .about .section-title {

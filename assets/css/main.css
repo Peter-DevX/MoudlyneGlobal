@@ -1,12 +1,14 @@
 /* Fonts */
 :root {
-  --default-font: "Open Sans",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Marcellus",  sans-serif;
-  --nav-font: "Marcellus",  sans-serif;
+  --default-font: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Marcellus", sans-serif;
+  --nav-font: "Marcellus", sans-serif;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
-:root { 
+:root {
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
   --default-color: #212529; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #2d465e; /* Color for headings, subheadings and title throughout the website */
@@ -17,7 +19,7 @@
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: #212529;  /* The default color of the main navmenu links */
+  --nav-color: #212529; /* The default color of the main navmenu links */
   --nav-hover-color: #116530; /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
@@ -133,7 +135,10 @@ h6 {
 .pulsating-play-btn {
   width: 94px;
   height: 94px;
-  background: radial-gradient(var(--accent-color) 50%, color-mix(in srgb, var(--accent-color), transparent 75%) 52%);
+  background: radial-gradient(
+    var(--accent-color) 50%,
+    color-mix(in srgb, var(--accent-color), transparent 75%) 52%
+  );
   border-radius: 50%;
   display: block;
   position: relative;
@@ -235,7 +240,8 @@ h6 {
 }
 
 .scrolled .header {
-  box-shadow: 0px 0 18px color-mix(in srgb, var(--default-color), transparent 85%);
+  box-shadow: 0px 0 18px
+    color-mix(in srgb, var(--default-color), transparent 85%);
 }
 
 /*--------------------------------------------------------------
@@ -285,7 +291,7 @@ h6 {
     padding-right: 0;
   }
 
-  .navmenu li:hover>a,
+  .navmenu li:hover > a,
   .navmenu .active,
   .navmenu .active:focus {
     color: var(--nav-hover-color);
@@ -304,7 +310,8 @@ h6 {
     transition: 0.3s;
     border-radius: 4px;
     z-index: 99;
-    box-shadow: 0px 0px 30px color-mix(in srgb, var(--default-color), transparent 85%);
+    box-shadow: 0px 0px 30px
+      color-mix(in srgb, var(--default-color), transparent 85%);
   }
 
   .navmenu .dropdown ul li {
@@ -324,11 +331,11 @@ h6 {
 
   .navmenu .dropdown ul a:hover,
   .navmenu .dropdown ul .active:hover,
-  .navmenu .dropdown ul li:hover>a {
+  .navmenu .dropdown ul li:hover > a {
     color: var(--nav-dropdown-hover-color);
   }
 
-  .navmenu .dropdown:hover>ul {
+  .navmenu .dropdown:hover > ul {
     opacity: 1;
     top: 100%;
     visibility: visible;
@@ -340,7 +347,7 @@ h6 {
     visibility: hidden;
   }
 
-  .navmenu .dropdown .dropdown:hover>ul {
+  .navmenu .dropdown .dropdown:hover > ul {
     opacity: 1;
     top: 0;
     left: -100%;
@@ -376,7 +383,8 @@ h6 {
     overflow-y: auto;
     transition: 0.3s;
     z-index: 9998;
-    box-shadow: 0px 0px 30px color-mix(in srgb, var(--default-color), transparent 90%);
+    box-shadow: 0px 0px 30px
+      color-mix(in srgb, var(--default-color), transparent 90%);
   }
 
   .navmenu a,
@@ -443,7 +451,7 @@ h6 {
     background-color: rgba(33, 37, 41, 0.1);
   }
 
-  .navmenu .dropdown>.dropdown-active {
+  .navmenu .dropdown > .dropdown-active {
     display: block;
     background-color: rgba(33, 37, 41, 0.03);
   }
@@ -470,7 +478,7 @@ h6 {
     transition: 0.3s;
   }
 
-  .mobile-nav-active .navmenu>ul {
+  .mobile-nav-active .navmenu > ul {
     display: block;
   }
 }
@@ -699,7 +707,11 @@ h6 {
 
 .page-title:before {
   content: "";
-  background-color: color-mix(in srgb, var(--background-color), transparent 50%);
+  background-color: color-mix(
+    in srgb,
+    var(--background-color),
+    transparent 50%
+  );
   position: absolute;
   inset: 0;
 }
@@ -721,11 +733,11 @@ h6 {
   font-weight: 400;
 }
 
-.page-title .breadcrumbs ol li+li {
+.page-title .breadcrumbs ol li + li {
   padding-left: 10px;
 }
 
-.page-title .breadcrumbs ol li+li::before {
+.page-title .breadcrumbs ol li + li::before {
   content: "/";
   display: inline-block;
   padding-right: 10px;
@@ -745,7 +757,6 @@ section,
 }
 
 @media (max-width: 1199px) {
-
   section,
   .section {
     scroll-margin-top: 66px;
@@ -810,7 +821,7 @@ section,
 
 .hero .carousel-item:before {
   content: "";
-  background: color-mix(in srgb, var(--background-color), transparent 60%);
+  /* background: color-mix(in srgb, var(--background-color), transparent 60%); */
   position: absolute;
   inset: 0;
   z-index: 2;
@@ -844,7 +855,6 @@ section,
 }
 
 @media (min-width: 1024px) {
-
   .hero h2,
   .hero p {
     max-width: 60%;
@@ -888,7 +898,6 @@ section,
 }
 
 @media (min-width: 1024px) {
-
   .hero .carousel-control-prev,
   .hero .carousel-control-next {
     width: 5%;
@@ -962,7 +971,7 @@ section,
 }
 
 .service-card {
-  background:linear-gradient(135deg, #f5f7fa 0%, #e4e8eb 100%);
+  background: linear-gradient(135deg, #f5f7fa 0%, #e4e8eb 100%);
   padding: 40px 25px;
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
@@ -979,9 +988,15 @@ section,
   margin-bottom: 25px;
 }
 
-.service-card:nth-child(1) .service-icon { color: #4CAF50; } /* Green for fertilizer */
-.service-card:nth-child(2) .service-icon { color: #2196F3; } /* Blue for real estate */
-.service-card:nth-child(3) .service-icon { color: #9C27B0; } /* Purple for publishing */
+.service-card:nth-child(1) .service-icon {
+  color: #4caf50;
+} /* Green for fertilizer */
+.service-card:nth-child(2) .service-icon {
+  color: #2196f3;
+} /* Blue for real estate */
+.service-card:nth-child(3) .service-icon {
+  color: #9c27b0;
+} /* Purple for publishing */
 
 .service-card h3 {
   font-size: 1.6rem;
@@ -1005,21 +1020,16 @@ section,
 }
 
 .learn-more:hover {
-  color: #4CAF50;
-  border-bottom-color: #4CAF50;
+  color: #4caf50;
+  border-bottom-color: #4caf50;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
   .services-grid {
-      grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 }
-
-
-
-
-
 
 .services-section {
   padding: 60px 0;
@@ -1042,9 +1052,8 @@ section,
 }
 
 .section-title:hover {
-  color: #4CAF50;
+  color: #4caf50;
 }
-
 
 .section-subtitle {
   font-size: 18px;
@@ -1053,8 +1062,8 @@ section,
   text-align: center;
   transition: color 0.3s ease;
 }
-.section-subtitle:hover{
-    color: #888;
+.section-subtitle:hover {
+  color: #888;
 }
 
 .services-grid {
@@ -1082,11 +1091,11 @@ section,
 .service-icon {
   font-size: 40px;
   margin-bottom: 20px;
-  color: #4CAF50;
+  color: #4caf50;
   transition: color 0.3s ease;
 }
-.service-card:hover .service-icon{
-    color: #0c3001;
+.service-card:hover .service-icon {
+  color: #0c3001;
 }
 
 .service-title {
@@ -1096,8 +1105,8 @@ section,
   margin-bottom: 15px;
   transition: color 0.3s ease;
 }
-.service-card:hover .service-title{
-    color:#4CAF50
+.service-card:hover .service-title {
+  color: #4caf50;
 }
 
 .service-description {
@@ -1105,8 +1114,8 @@ section,
   color: #666;
   line-height: 1.6;
 }
-.service-card:hover .service-description{
-    color: #888;
+.service-card:hover .service-description {
+  color: #888;
 }
 
 /*Animations*/
@@ -1116,19 +1125,18 @@ section,
 .card-two {
   animation: fadeIn 1s ease, moveInRight 0.5s ease;
 }
-.card-three{
+.card-three {
   animation: fadeIn 1s ease, moveInLeft 0.5s ease;
 }
-.card-four{
-    animation: fadeIn 1s ease, moveInRight 0.5s ease;
+.card-four {
+  animation: fadeIn 1s ease, moveInRight 0.5s ease;
 }
-.card-five{
-    animation: fadeIn 1s ease, moveInLeft 0.5s ease;
+.card-five {
+  animation: fadeIn 1s ease, moveInLeft 0.5s ease;
 }
-.card-six{
-    animation: fadeIn 1s ease, moveInRight 0.5s ease;
+.card-six {
+  animation: fadeIn 1s ease, moveInRight 0.5s ease;
 }
-
 
 @keyframes fadeIn {
   from {
@@ -1139,22 +1147,21 @@ section,
   }
 }
 @keyframes moveInLeft {
-  from{
+  from {
     transform: translateX(-50px);
   }
-  to{
+  to {
     transform: translateX(0);
   }
 }
-@keyframes moveInRight{
-  from{
+@keyframes moveInRight {
+  from {
     transform: translateX(50px);
   }
-  to{
+  to {
     transform: translateX(0);
   }
 }
-
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
@@ -1270,6 +1277,9 @@ section,
 /*--------------------------------------------------------------
 # About Section
 --------------------------------------------------------------*/
+.about-image{
+  height: 100vh;
+}
 .about .section-title {
   margin-bottom: 20px;
 }
@@ -1343,7 +1353,11 @@ section,
 
 .services-2 .service-item:before {
   content: "";
-  background-color: color-mix(in srgb, var(--background-color), transparent 50%);
+  background-color: color-mix(
+    in srgb,
+    var(--background-color),
+    transparent 50%
+  );
   top: 0;
   left: 0;
   right: 0;
@@ -1442,7 +1456,11 @@ section,
   border-radius: 0;
   width: 20px;
   height: 4px;
-  background-color: color-mix(in srgb, var(--background-color), transparent 80%) !important;
+  background-color: color-mix(
+    in srgb,
+    var(--background-color),
+    transparent 80%
+  ) !important;
   opacity: 1;
 }
 
@@ -1566,16 +1584,16 @@ section,
   border-radius: 0;
 }
 
-.call-to-action .content .form-subscribe input[type=email] {
+.call-to-action .content .form-subscribe input[type="email"] {
   height: 63px !important;
   color: var(--default-color);
 }
 
-.call-to-action .content .form-subscribe input[type=email]:focus {
+.call-to-action .content .form-subscribe input[type="email"]:focus {
   box-shadow: none;
 }
 
-.call-to-action .content .form-subscribe input[type=email]::placeholder {
+.call-to-action .content .form-subscribe input[type="email"]::placeholder {
   color: color-mix(in srgb, var(--contrast-color), transparent 50%);
 }
 
@@ -1589,11 +1607,11 @@ section,
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s ease;
-  
+
   /* Color scheme */
   background: #116530;
   color: white;
-  
+
   /* Hover effects */
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
@@ -1608,7 +1626,6 @@ section,
   transform: translateY(0);
 }
 
-
 /* form .subscribe_hover:hover{
 
   background-color: #116530;
@@ -1616,7 +1633,6 @@ section,
 .subscribe_hover:hover{
   background-color: #0c3001;
 } */
-
 
 .call-to-action .content .loading,
 .call-to-action .content .error-message,
@@ -1758,7 +1774,7 @@ section,
   position: relative;
 }
 
-.team .person .social a>span {
+.team .person .social a > span {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1974,7 +1990,7 @@ section,
   margin: 0;
 }
 
-.blog-details .meta-top ul li+li {
+.blog-details .meta-top ul li + li {
   padding-left: 20px;
 }
 
@@ -1994,7 +2010,8 @@ section,
 
 .blog-details .meta-bottom {
   padding-top: 10px;
-  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  border-top: 1px solid
+    color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
 .blog-details .meta-bottom i {
@@ -2033,7 +2050,7 @@ section,
   display: inline-block;
 }
 
-.blog-details .meta-bottom .tags li+li::before {
+.blog-details .meta-bottom .tags li + li::before {
   padding-right: 6px;
   color: var(--default-color);
   content: ",";
@@ -2212,10 +2229,11 @@ section,
   font-size: 15px;
 }
 
-.contact .info-item+.info-item {
+.contact .info-item + .info-item {
   padding-top: 20px;
   margin-top: 20px;
-  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  border-top: 1px solid
+    color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
 .contact .info-item i {
@@ -2248,8 +2266,8 @@ section,
   padding-bottom: 8px;
 }
 
-.contact .php-email-form input[type=text],
-.contact .php-email-form input[type=email],
+.contact .php-email-form input[type="text"],
+.contact .php-email-form input[type="email"],
 .contact .php-email-form textarea {
   color: var(--default-color);
   background-color: var(--surface-color);
@@ -2259,20 +2277,20 @@ section,
   border-color: color-mix(in srgb, var(--default-color), transparent 80%);
 }
 
-.contact .php-email-form input[type=text]:focus,
-.contact .php-email-form input[type=email]:focus,
+.contact .php-email-form input[type="text"]:focus,
+.contact .php-email-form input[type="email"]:focus,
 .contact .php-email-form textarea:focus {
   border-color: var(--accent-color);
 }
 
-.contact .php-email-form input[type=text]::placeholder,
-.contact .php-email-form input[type=email]::placeholder,
+.contact .php-email-form input[type="text"]::placeholder,
+.contact .php-email-form input[type="email"]::placeholder,
 .contact .php-email-form textarea::placeholder {
   color: color-mix(in srgb, var(--default-color), transparent 70%);
 }
 
-.contact .php-email-form input[type=text],
-.contact .php-email-form input[type=email] {
+.contact .php-email-form input[type="text"],
+.contact .php-email-form input[type="email"] {
   height: 48px;
   padding: 10px 15px;
 }
@@ -2282,7 +2300,7 @@ section,
   height: 290px;
 }
 
-.contact .php-email-form button[type=submit] {
+.contact .php-email-form button[type="submit"] {
   background: var(--accent-color);
   color: var(--contrast-color);
   border: 0;
@@ -2291,7 +2309,7 @@ section,
   border-radius: 4px;
 }
 
-.contact .php-email-form button[type=submit]:hover {
+.contact .php-email-form button[type="submit"]:hover {
   background: color-mix(in srgb, var(--accent-color) 90%, black 15%);
 }
 
@@ -2447,7 +2465,7 @@ section,
   transition: 0.3s;
 }
 
-.search-widget form input[type=text] {
+.search-widget form input[type="text"] {
   border: 0;
   padding: 4px;
   border-radius: 4px;
@@ -2456,7 +2474,7 @@ section,
   color: var(--default-color);
 }
 
-.search-widget form input[type=text]:focus {
+.search-widget form input[type="text"]:focus {
   outline: none;
 }
 

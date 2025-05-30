@@ -837,6 +837,15 @@ section,
   z-index: 3;
 }
 
+.moa_water_container{
+  background-image: url(../img/water_bg.jpg);
+}
+.carousel-item .moa_water{
+  object-fit: contain;
+  height: 100vh;
+  width: 100vw;
+}
+
 .hero h2 {
   margin-bottom: 30px;
   font-size: 48px;
@@ -1322,6 +1331,11 @@ section,
   color: var(--contrast-color);
   text-transform: uppercase;
   font-size: 1.3rem;
+}
+
+.img-fluid{
+  height: 500px;
+  width: 500px;
 }
 
 /*--------------------------------------------------------------
